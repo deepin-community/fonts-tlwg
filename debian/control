@@ -1,0 +1,648 @@
+Source: fonts-tlwg
+Section: fonts
+Priority: optional
+Maintainer: Theppitak Karoonboonyanan <thep@debian.org>
+Build-Depends: debhelper-compat (= 13)
+Build-Depends-Indep:
+ autoconf-archive,
+ fontforge-nox (>= 1:20190801~) | fontforge (>= 1:20190801~),
+ python3-fontforge (>= 1:20190801~)
+Rules-Requires-Root: no
+Vcs-Git: https://salsa.debian.org/fonts-team/fonts-tlwg.git
+Vcs-Browser: https://salsa.debian.org/fonts-team/fonts-tlwg
+Homepage: https://linux.thai.net/projects/fonts-tlwg
+Standards-Version: 4.6.0
+
+Package: fonts-tlwg-kinnari
+Architecture: all
+Multi-Arch: foreign
+Depends: fonts-tlwg-kinnari-ttf | fonts-tlwg-kinnari-otf, ${misc:Depends}
+Description: Thai Kinnari font (dependency package)
+ This package provides Thai Kinnari font, code-named "NF1", from the
+ National Font Project.
+ .
+ The font provides Times-compatible Thai glyphs traditionally used in
+ school books and official documents.
+ .
+ This is a dependency package for installing alternative font formats.
+
+Package: fonts-tlwg-garuda
+Architecture: all
+Multi-Arch: foreign
+Depends: fonts-tlwg-garuda-ttf | fonts-tlwg-garuda-otf, ${misc:Depends}
+Description: Thai Garuda font (dependency package)
+ This package provides Thai Garuda font, code-named "NF2", from the
+ National Font Project.
+ .
+ The font provides Arial-compatible Thai monoweight glyphs traditionally
+ used in school books and official documents.
+ .
+ This is a dependency package for installing alternative font formats.
+
+Package: fonts-tlwg-norasi
+Architecture: all
+Multi-Arch: foreign
+Depends: fonts-tlwg-norasi-ttf | fonts-tlwg-norasi-otf, ${misc:Depends}
+Description: Thai Norasi font (dependency package)
+ This package provides Thai Norasi font, code-name "NF3", from the
+ National Font Project.
+ .
+ The font provides Times-compatible Thai glyphs with a rich set of Latin
+ glyphs for typesetting books. It was originally created for the Omega
+ (Unicode-based TeX kernel) project.
+ .
+ This is a dependency package for installing alternative font formats.
+
+Package: fonts-tlwg-loma
+Architecture: all
+Multi-Arch: foreign
+Depends: fonts-tlwg-loma-ttf | fonts-tlwg-loma-otf, ${misc:Depends}
+Description: Thai Loma font (dependency package)
+ This package provides Thai Loma UI font from NECTEC.
+ .
+ The font provides Arial-compatible Thai glyphs with metrics optimized
+ for on-screen user interface. For example, line spacing is reduced from
+ regular typographic designs to allow more lines displayed on screen.
+ .
+ This is a dependency package for installing alternative font formats.
+
+Package: fonts-tlwg-mono
+Architecture: all
+Multi-Arch: foreign
+Depends: fonts-tlwg-mono-ttf | fonts-tlwg-mono-otf, ${misc:Depends}
+Description: Thai TlwgMono font (dependency package)
+ This package provides Thai TlwgMono monospace font from TLWG.
+ .
+ The font provides Thai purely monospace font, i.e. all glyphs are of the
+ same width, even for combining characters.
+ .
+ The glyph shapes are designed to look like Thai X bitmap font for terminal.
+ .
+ This is a dependency package for installing alternative font formats.
+
+Package: fonts-tlwg-typewriter
+Architecture: all
+Multi-Arch: foreign
+Depends: fonts-tlwg-typewriter-ttf | fonts-tlwg-typewriter-otf, ${misc:Depends}
+Description: Thai TlwgTypewriter font (dependency package)
+ This package provides Thai TlwgTypewriter monospace font from TLWG.
+ .
+ The font provides Thai semi-monospace font, i.e. all glyphs are of the
+ same width, except combining characters.
+ .
+ The glyph shapes are designed to look like Thai X bitmap font for terminal.
+ .
+ This is a dependency package for installing alternative font formats.
+
+Package: fonts-tlwg-typist
+Architecture: all
+Multi-Arch: foreign
+Depends: fonts-tlwg-typist-ttf | fonts-tlwg-typist-otf, ${misc:Depends}
+Description: Thai TlwgTypist font (dependency package)
+ This package provides Thai TlwgTypist monospace font from TLWG.
+ .
+ The font provides Thai semi-monospace font, i.e. all glyphs are of the
+ same width, except combining characters.
+ .
+ The glyph shapes are designed to look like Thai electric typewriters.
+ .
+ This is a dependency package for installing alternative font formats.
+
+Package: fonts-tlwg-typo
+Architecture: all
+Multi-Arch: foreign
+Depends: fonts-tlwg-typo-ttf | fonts-tlwg-typo-otf, ${misc:Depends}
+Description: Thai TlwgTypo font (dependency package)
+ This package provides Thai TlwgTypo monospace font from TLWG.
+ .
+ The font provides Thai purely monospace font, i.e. all glyphs are of the
+ same width, even for combining characters, but with some rules in the font
+ to combine them to base characters.
+ .
+ The glyph shapes are designed to look like Thai electric typewriters.
+ .
+ This is a dependency package for installing alternative font formats.
+
+Package: fonts-tlwg-umpush
+Architecture: all
+Multi-Arch: foreign
+Depends: fonts-tlwg-umpush-ttf | fonts-tlwg-umpush-otf, ${misc:Depends}
+Description: Thai Umpush font (dependency package)
+ This package provides Thai Umpush font from TLWG.
+ .
+ The font provides arch-shaped Thai glyphs similar to Cordia.
+ The style is mostly used in pocket books or semi-official documents.
+ .
+ This is a dependency package for installing alternative font formats.
+
+Package: fonts-tlwg-sawasdee
+Architecture: all
+Multi-Arch: foreign
+Depends: fonts-tlwg-sawasdee-ttf | fonts-tlwg-sawasdee-otf, ${misc:Depends}
+Description: Thai Sawasdee font (dependency package)
+ This package provides Thai Sawasdee decorative font from TLWG.
+ .
+ The font provides round-shaped Thai glyphs for decoration. It can also
+ be used in stylish body text.
+ .
+ This is a dependency package for installing alternative font formats.
+
+Package: fonts-tlwg-purisa
+Architecture: all
+Multi-Arch: foreign
+Depends: fonts-tlwg-purisa-ttf | fonts-tlwg-purisa-otf, ${misc:Depends}
+Description: Thai Purisa font (dependency package)
+ This package provides Thai Purisa handwriting font from TLWG.
+ .
+ The font provides handwriting Thai glyphs. Latin handwriting glyphs are
+ also available.
+ .
+ This is a dependency package for installing alternative font formats.
+
+Package: fonts-tlwg-waree
+Architecture: all
+Multi-Arch: foreign
+Depends: fonts-tlwg-waree-ttf | fonts-tlwg-waree-otf, ${misc:Depends}
+Description: Thai Waree font (dependency package)
+ This package provides Thai Waree font from TLWG.
+ .
+ The font provides DejaVu-compatible Thai glyphs with metrics optimized
+ for on-screen user interface. For example, line spacing is reduced from
+ regular typographic designs to allow more lines displayed on screen.
+ .
+ This is a dependency package for installing alternative font formats.
+
+Package: fonts-tlwg-laksaman
+Architecture: all
+Multi-Arch: foreign
+Depends: fonts-tlwg-laksaman-ttf | fonts-tlwg-laksaman-otf, ${misc:Depends}
+Description: Thai Laksaman font (dependency package)
+ This package provides Thai Laksaman font from TLWG.
+ .
+ Modified from Sarabun, the font provides Thai monoweight glyphs as used
+ in Thai official documents and letters.
+ .
+ This is a dependency package for installing alternative font formats.
+
+Package: fonts-thai-tlwg
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ fonts-tlwg-garuda,
+ fonts-tlwg-kinnari,
+ fonts-tlwg-laksaman,
+ fonts-tlwg-loma,
+ fonts-tlwg-mono,
+ fonts-tlwg-norasi,
+ fonts-tlwg-purisa,
+ fonts-tlwg-sawasdee,
+ fonts-tlwg-typewriter,
+ fonts-tlwg-typist,
+ fonts-tlwg-typo,
+ fonts-tlwg-umpush,
+ fonts-tlwg-waree,
+ ${misc:Depends}
+Description: Thai fonts maintained by TLWG (metapackage)
+ Shortcut for installing all Thai fonts that are collected, enhanced and
+ maintained by Thai Linux Working Group (TLWG).
+ .
+ Every font in this package is provided in TrueType and OpenType formats
+ for users to choose to suit their needs. Both formats are maintained
+ to provide the same glyph set, glyph design, and typographical features,
+ except that curves and hints are defined in CFF format for the OpenType
+ version, and in TTF format for the TrueType version.
+ .
+ Most modern desktop users who want to use Thai language should install this
+ package.
+
+Package: fonts-tlwg-kinnari-ttf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Replaces: fonts-tlwg-kinnari (<< 1:0.6.2-2)
+Breaks: fonts-tlwg-kinnari (<< 1:0.6.2-2)
+Recommends: fonts-tlwg-kinnari (>= 1:0.6.2-2)
+Description: Thai Kinnari TrueType font
+ This package provides Thai Kinnari font, code-named "NF1", from the
+ National Font Project, in TrueType format.
+ .
+ The font provides Times-compatible Thai glyphs traditionally used in
+ school books and official documents.
+
+Package: fonts-tlwg-garuda-ttf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Replaces: fonts-tlwg-garuda (<< 1:0.6.2-2)
+Breaks: fonts-tlwg-garuda (<< 1:0.6.2-2)
+Recommends: fonts-tlwg-garuda (>= 1:0.6.2-2)
+Description: Thai Garuda TrueType font
+ This package provides Thai Garuda font, code-named "NF2", from the
+ National Font Project, in TrueType format.
+ .
+ The font provides Arial-compatible Thai monoweight glyphs traditionally
+ used in school books and official documents.
+
+Package: fonts-tlwg-norasi-ttf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Replaces: fonts-tlwg-norasi (<< 1:0.6.2-2)
+Breaks: fonts-tlwg-norasi (<< 1:0.6.2-2)
+Recommends: fonts-tlwg-norasi (>= 1:0.6.2-2)
+Description: Thai Norasi TrueType font
+ This package provides Thai Norasi font, code-name "NF3", from the
+ National Font Project, in TrueType format.
+ .
+ The font provides Times-compatible Thai glyphs with a rich set of Latin
+ glyphs for typesetting books. It was originally created for the Omega
+ (Unicode-based TeX kernel) project.
+
+Package: fonts-tlwg-loma-ttf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Replaces: fonts-tlwg-loma (<< 1:0.6.2-2)
+Breaks: fonts-tlwg-loma (<< 1:0.6.2-2)
+Recommends: fonts-tlwg-loma (>= 1:0.6.2-2)
+Description: Thai Loma TrueType font
+ This package provides Thai Loma UI font from NECTEC, in TrueType format.
+ .
+ The font provides Arial-compatible Thai glyphs with metrics optimized
+ for on-screen user interface. For example, line spacing is reduced from
+ regular typographic designs to allow more lines displayed on screen.
+
+Package: fonts-tlwg-mono-ttf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Replaces: fonts-tlwg-mono (<< 1:0.6.2-2)
+Breaks: fonts-tlwg-mono (<< 1:0.6.2-2)
+Recommends: fonts-tlwg-mono (>= 1:0.6.2-2)
+Description: Thai TlwgMono TrueType font
+ This package provides Thai TlwgMono monospace font from TLWG, in TrueType
+ format.
+ .
+ The font provides Thai purely monospace font, i.e. all glyphs are of the
+ same width, even for combining characters.
+ .
+ The glyph shapes are designed to look like Thai X bitmap font for terminal.
+
+Package: fonts-tlwg-typewriter-ttf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Replaces: fonts-tlwg-typewriter (<< 1:0.6.2-2)
+Breaks: fonts-tlwg-typewriter (<< 1:0.6.2-2)
+Recommends: fonts-tlwg-typewriter (>= 1:0.6.2-2)
+Description: Thai TlwgTypewriter TrueType font
+ This package provides Thai TlwgTypewriter monospace font from TLWG, in
+ TrueType format.
+ .
+ The font provides Thai semi-monospace font, i.e. all glyphs are of the
+ same width, except combining characters.
+ .
+ The glyph shapes are designed to look like Thai X bitmap font for terminal.
+
+Package: fonts-tlwg-typist-ttf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Replaces: fonts-tlwg-typist (<< 1:0.6.2-2)
+Breaks: fonts-tlwg-typist (<< 1:0.6.2-2)
+Recommends: fonts-tlwg-typist (>= 1:0.6.2-2)
+Description: Thai TlwgTypist TrueType font
+ This package provides Thai TlwgTypist monospace font from TLWG, in
+ TrueType format.
+ .
+ The font provides Thai semi-monospace font, i.e. all glyphs are of the
+ same width, except combining characters.
+ .
+ The glyph shapes are designed to look like Thai electric typewriters.
+
+Package: fonts-tlwg-typo-ttf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Replaces: fonts-tlwg-typo (<< 1:0.6.2-2)
+Breaks: fonts-tlwg-typo (<< 1:0.6.2-2)
+Recommends: fonts-tlwg-typo (>= 1:0.6.2-2)
+Description: Thai TlwgTypo TrueType font
+ This package provides Thai TlwgTypo monospace font from TLWG, in TrueType
+ format.
+ .
+ The font provides Thai purely monospace font, i.e. all glyphs are of the
+ same width, even for combining characters, but with some rules in the font
+ to combine them to base characters.
+ .
+ The glyph shapes are designed to look like Thai electric typewriters.
+
+Package: fonts-tlwg-umpush-ttf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Replaces: fonts-tlwg-umpush (<< 1:0.6.2-2)
+Breaks: fonts-tlwg-umpush (<< 1:0.6.2-2)
+Recommends: fonts-tlwg-umpush (>= 1:0.6.2-2)
+Description: Thai Umpush TrueType font
+ This package provides Thai Umpush font from TLWG, in TrueType format.
+ .
+ The font provides arch-shaped Thai glyphs similar to Cordia.
+ The style is mostly used in pocket books or semi-official documents.
+
+Package: fonts-tlwg-sawasdee-ttf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Replaces: fonts-tlwg-sawasdee (<< 1:0.6.2-2)
+Breaks: fonts-tlwg-sawasdee (<< 1:0.6.2-2)
+Recommends: fonts-tlwg-sawasdee (>= 1:0.6.2-2)
+Description: Thai Sawasdee TrueType font
+ This package provides Thai Sawasdee decorative font from TLWG, in TrueType
+ format.
+ .
+ The font provides round-shaped Thai glyphs for decoration. It can also
+ be used in stylish body text.
+
+Package: fonts-tlwg-purisa-ttf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Replaces: fonts-tlwg-purisa (<< 1:0.6.2-2)
+Breaks: fonts-tlwg-purisa (<< 1:0.6.2-2)
+Recommends: fonts-tlwg-purisa (>= 1:0.6.2-2)
+Description: Thai Purisa TrueType font
+ This package provides Thai Purisa handwriting font from TLWG, in TrueType
+ format.
+ .
+ The font provides handwriting Thai glyphs. Latin handwriting glyphs are
+ also available.
+
+Package: fonts-tlwg-waree-ttf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Replaces: fonts-tlwg-waree (<< 1:0.6.2-2)
+Breaks: fonts-tlwg-waree (<< 1:0.6.2-2)
+Recommends: fonts-tlwg-waree (>= 1:0.6.2-2)
+Description: Thai Waree TrueType font
+ This package provides Thai Waree font from TLWG, in TrueType format.
+ .
+ The font provides DejaVu-compatible Thai glyphs with metrics optimized
+ for on-screen user interface. For example, line spacing is reduced from
+ regular typographic designs to allow more lines displayed on screen.
+
+Package: fonts-tlwg-laksaman-ttf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Replaces: fonts-tlwg-laksaman (<< 1:0.6.2-2)
+Breaks: fonts-tlwg-laksaman (<< 1:0.6.2-2)
+Recommends: fonts-tlwg-laksaman (>= 1:0.6.2-2)
+Description: Thai Laksaman TrueType font
+ This package provides Thai Laksaman font from TLWG, in TrueType format.
+ .
+ Modified from Sarabun, the font provides Thai monoweight glyphs as used
+ in Thai official documents and letters.
+
+Package: fonts-thai-tlwg-ttf
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ fonts-tlwg-garuda-ttf,
+ fonts-tlwg-kinnari-ttf,
+ fonts-tlwg-laksaman-ttf,
+ fonts-tlwg-loma-ttf,
+ fonts-tlwg-mono-ttf,
+ fonts-tlwg-norasi-ttf,
+ fonts-tlwg-purisa-ttf,
+ fonts-tlwg-sawasdee-ttf,
+ fonts-tlwg-typewriter-ttf,
+ fonts-tlwg-typist-ttf,
+ fonts-tlwg-typo-ttf,
+ fonts-tlwg-umpush-ttf,
+ fonts-tlwg-waree-ttf,
+ ${misc:Depends}
+Description: Thai TrueType fonts maintained by TLWG (metapackage)
+ Shortcut for installing all Thai fonts that are collected, enhanced and
+ maintained by Thai Linux Working Group (TLWG), in TrueType format.
+ .
+ Most modern desktop users who want to use Thai language should install this
+ package.
+
+Package: fonts-tlwg-kinnari-otf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Recommends: fonts-tlwg-kinnari (>=1:0.6.2-2)
+Description: Thai Kinnari OpenType font
+ This package provides Thai Kinnari font, code-named "NF1", from the
+ National Font Project, in OpenType format.
+ .
+ The font provides Times-compatible Thai glyphs traditionally used in
+ school books and official documents.
+
+Package: fonts-tlwg-garuda-otf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Recommends: fonts-tlwg-garuda (>=1:0.6.2-2)
+Description: Thai Garuda OpenType font
+ This package provides Thai Garuda font, code-named "NF2", from the
+ National Font Project, in OpenType format.
+ .
+ The font provides Arial-compatible Thai monoweight glyphs traditionally
+ used in school books and official documents.
+
+Package: fonts-tlwg-norasi-otf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Recommends: fonts-tlwg-norasi (>=1:0.6.2-2)
+Description: Thai Norasi OpenType font
+ This package provides Thai Norasi font, code-name "NF3", from the
+ National Font Project, in OpenType format.
+ .
+ The font provides Times-compatible Thai glyphs with a rich set of Latin
+ glyphs for typesetting books. It was originally created for the Omega
+ (Unicode-based TeX kernel) project.
+
+Package: fonts-tlwg-loma-otf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Recommends: fonts-tlwg-loma (>=1:0.6.2-2)
+Description: Thai Loma OpenType font
+ This package provides Thai Loma UI font from NECTEC, in OpenType format.
+ .
+ The font provides Arial-compatible Thai glyphs with metrics optimized
+ for on-screen user interface. For example, line spacing is reduced from
+ regular typographic designs to allow more lines displayed on screen.
+
+Package: fonts-tlwg-mono-otf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Recommends: fonts-tlwg-mono (>=1:0.6.2-2)
+Description: Thai TlwgMono OpenType font
+ This package provides Thai TlwgMono monospace font from TLWG, in OpenType
+ format.
+ .
+ The font provides Thai purely monospace font, i.e. all glyphs are of the
+ same width, even for combining characters.
+ .
+ The glyph shapes are designed to look like Thai X bitmap font for terminal.
+
+Package: fonts-tlwg-typewriter-otf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Recommends: fonts-tlwg-typewriter (>=1:0.6.2-2)
+Description: Thai TlwgTypewriter OpenType font
+ This package provides Thai TlwgTypewriter monospace font from TLWG, in
+ OpenType format.
+ .
+ The font provides Thai semi-monospace font, i.e. all glyphs are of the
+ same width, except combining characters.
+ .
+ The glyph shapes are designed to look like Thai X bitmap font for terminal.
+
+Package: fonts-tlwg-typist-otf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Recommends: fonts-tlwg-typist (>=1:0.6.2-2)
+Description: Thai TlwgTypist OpenType font
+ This package provides Thai TlwgTypist monospace font from TLWG, in
+ OpenType format.
+ .
+ The font provides Thai semi-monospace font, i.e. all glyphs are of the
+ same width, except combining characters.
+ .
+ The glyph shapes are designed to look like Thai electric typewriters.
+
+Package: fonts-tlwg-typo-otf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Recommends: fonts-tlwg-typo (>=1:0.6.2-2)
+Description: Thai TlwgTypo OpenType font
+ This package provides Thai TlwgTypo monospace font from TLWG, in OpenType
+ format.
+ .
+ The font provides Thai purely monospace font, i.e. all glyphs are of the
+ same width, even for combining characters, but with some rules in the font
+ to combine them to base characters.
+ .
+ The glyph shapes are designed to look like Thai electric typewriters.
+
+Package: fonts-tlwg-umpush-otf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Recommends: fonts-tlwg-umpush (>=1:0.6.2-2)
+Description: Thai Umpush OpenType font
+ This package provides Thai Umpush font from TLWG, in OpenType format.
+ .
+ The font provides arch-shaped Thai glyphs similar to Cordia.
+ The style is mostly used in pocket books or semi-official documents.
+
+Package: fonts-tlwg-sawasdee-otf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Recommends: fonts-tlwg-sawasdee (>=1:0.6.2-2)
+Description: Thai Sawasdee OpenType font
+ This package provides Thai Sawasdee decorative font from TLWG, in OpenType
+ format.
+ .
+ The font provides round-shaped Thai glyphs for decoration. It can also
+ be used in stylish body text.
+
+Package: fonts-tlwg-purisa-otf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Recommends: fonts-tlwg-purisa (>=1:0.6.2-2)
+Description: Thai Purisa OpenType font
+ This package provides Thai Purisa handwriting font from TLWG, in OpenType
+ format.
+ .
+ The font provides handwriting Thai glyphs. Latin handwriting glyphs are
+ also available.
+
+Package: fonts-tlwg-waree-otf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Recommends: fonts-tlwg-waree (>=1:0.6.2-2)
+Description: Thai Waree OpenType font
+ This package provides Thai Waree font from TLWG, in OpenType format.
+ .
+ The font provides DejaVu-compatible Thai glyphs with metrics optimized
+ for on-screen user interface. For example, line spacing is reduced from
+ regular typographic designs to allow more lines displayed on screen.
+
+Package: fonts-tlwg-laksaman-otf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Recommends: fonts-tlwg-laksaman (>=1:0.6.2-2)
+Description: Thai Laksaman OpenType font
+ This package provides Thai Laksaman font from TLWG, in OpenType format.
+ .
+ Modified from Sarabun, the font provides Thai monoweight glyphs as used
+ in Thai official documents and letters.
+
+Package: fonts-thai-tlwg-otf
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ fonts-tlwg-garuda-otf,
+ fonts-tlwg-kinnari-otf,
+ fonts-tlwg-laksaman-otf,
+ fonts-tlwg-loma-otf,
+ fonts-tlwg-mono-otf,
+ fonts-tlwg-norasi-otf,
+ fonts-tlwg-purisa-otf,
+ fonts-tlwg-sawasdee-otf,
+ fonts-tlwg-typewriter-otf,
+ fonts-tlwg-typist-otf,
+ fonts-tlwg-typo-otf,
+ fonts-tlwg-umpush-otf,
+ fonts-tlwg-waree-otf,
+ ${misc:Depends}
+Description: Thai OpenType fonts maintained by TLWG (metapackage)
+ Shortcut for installing all Thai fonts that are collected, enhanced and
+ maintained by Thai Linux Working Group (TLWG), in OpenType format.
+ .
+ Most modern desktop users who want to use Thai language should install this
+ package.
+
+Package: fonts-thai-tlwg-web
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: Thai web fonts maintained by TLWG
+ This package provides Thai fonts from TLWG in WOFF format for use in
+ web font services.
+ .
+ This includes:
+  - Serif fonts: Kinnari, Norasi
+  - San Serif fonts: Garuda, Umpush, Laksaman
+  - UI fonts: Loma, Waree
+  - Monospace fonts: Tlwg Mono, Tlwg Typewriter, Tlwg Typist, Tlwg Typo
+  - Decorative fonts: Sawasdee
+  - Handwriting fonts: Purisa
+
+Package: fonts-thai-tlwg-udeb
+Package-Type: udeb
+Section: debian-installer
+Architecture: all
+Depends: ${misc:Depends}
+Multi-Arch: foreign
+Description: Thai fonts in TrueType format for D-I use
+ Thai font optimized for on-screen user interface.
+ .
+ This package provides Thai UI font for use with the GUI frontend of
+ debian-installer.

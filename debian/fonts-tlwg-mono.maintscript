@@ -1,0 +1,1 @@
+rm_conffile /etc/fonts/conf.avail/64-23-tlwg-mono.conf 1:0.6.4-2~ fonts-tlwg-mono

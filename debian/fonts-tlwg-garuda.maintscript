@@ -1,0 +1,2 @@
+rm_conffile /etc/fonts/conf.avail/64-13-tlwg-garuda.conf 1:0.6.4-2~ fonts-tlwg-garuda
+rm_conffile /etc/fonts/conf.avail/89-tlwg-garuda-synthetic.conf 1:0.6.4-2~ fonts-tlwg-garuda
